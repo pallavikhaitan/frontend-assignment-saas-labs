@@ -1,0 +1,125 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 16px;
+}
+
+.app-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #2a3d66;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Table Styles */
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.project-table th,
+.project-table td {
+  padding: 16px;
+  font-size: 1.1rem;
+  border: 1px solid #ddd;
+  /* Border added for table cells */
+}
+
+.project-table th {
+  background-color: #3b6f91;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  /* Center align the headings */
+}
+
+.project-table td {
+  background-color: #f9f9f9;
+  text-align: right;
+  /* Right align the text in rows */
+}
+
+.project-table tr:hover {
+  background-color: #f0f8ff;
+}
+
+.project-table tr:nth-child(even) td {
+  background-color: #f4f4f4;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 12px 20px;
+  background-color: #5c7b9f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #4e6a85;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination button.active {
+  background-color: #2a3d66;
+}
+
+.pagination span {
+  padding: 12px 20px;
+  color: #888;
+  font-size: 1rem;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .app-container {
+    width: 95%;
+  }
+
+  .pagination button {
+    font-size: 0.9rem;
+  }
+
+  .project-table th,
+  .project-table td {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
